@@ -1,2 +1,1 @@
-
-asdlkfjasdljk
+print 'hello world'
