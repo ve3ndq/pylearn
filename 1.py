@@ -33,8 +33,9 @@ for x in myresult:
 
 
 
-sql = "INSERT INTO temper (temp) VALUES (111);"
-mycursor.execute(sql)
+sql = "INSERT INTO temper (temp,location) VALUES (%s,%s);"
+val = (22.5,'xxx')
+mycursor.execute(sql,val)
 mydb.commit()
 
 print(sql)
